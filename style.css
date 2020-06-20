@@ -1,43 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .card {
-    border-radius: 5px;
-    border-width: 1px;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-    text-align: center;
-  }
-
-  .card-body {
-      text-align: center;
-  }
-
-  .card-footer {
-    text-align: center;
-  }
-
-  .btn {
+  .start-button {
     border: none;
     background-color: indigo;
     border-radius: 8px;
@@ -49,4 +11,12 @@ body,
     padding: 10px;
     text-align: center;
     cursor: pointer;
+  }
+
+  .opening-screen {
+      display: block;
+  }
+
+  .question1 {
+      display: none;
   }

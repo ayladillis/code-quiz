@@ -8,8 +8,9 @@
 </head>
 <body>
 
-<div class="wrapper">
- <div class="card">
+<!--First page-->
+
+<!-- <div class="container">
      <div class="card-header">
         <h1>Code Quiz Challenge!</h1>
     </div>  
@@ -20,70 +21,27 @@
         seconds!
     </p>
 <div class="card-footer">
-    <button id="submit" class="btn">Start</button>
+    <button id="start-button" class="opening-screen">Start</button>
 </div>
 
   </div>
+</div> -->
+
+<!--timer-->
+<div>
+    <div>Timer: <span id="timer">75</span></div>
 </div>
 
-
-<!--questions for quiz-->
-
-<h2 class="time"></h2>
-
- <!-- var myQuestions = [
-    {
-        question: "What is the first step to baking chocholat chip cookes?",
-        answer: {
-            a: "mix ingrediets together",
-            b: "assemble all ingrediets",
-            c: "eat some chocholat chips"
-     },
-        correctAnswer: "b"
-    },
-
-    {
-    question: "What tempeture should the oven be set to?",
-    answer: {
-        a: "400F",
-        B: "250F",
-        c: "375F"
-     },
-         correctAnswer: "c"
-    },
-
-    {
-    question: "how many eggs should we use for a normal batch of 24 cookies?",
-    answer: {
-        a: "3 eggs",
-        b: "7 eggs",
-        c: "no eggs"
-     },
-        correctAnswer: "a"
-    },
-
-    {
-    quesstion: "When adding the sugar what is the ratio of brown to white?",
-    answer: {
-        a: "2:1",
-        b: "1:2",
-        c: "1:1"
-     },
-        correctAnswer: "c"
-    },
-
-    { 
-        quesstion: "How long should the cookies bake for?",
-        answer: {
-            a: "8-10 minutes",
-            b: "4-5 minutes",
-            c: "14-16 minutes"
-        },
-            correctAnswer: "a"
-    }
-
- ] -->
-    
+<!-- Questions -->
+<div>
+<card id="start-screen" class="opening-screen">
+    <h1>Coding Quiz Challenge</h1>
+    <button id="start-button" style="background-color:indigo; color:white;">Start Quiz</button>
+</card>
+<card id="question1" class="question">
+    <p>What is the first step to baking chocholat chip cookies?</p>
+</card>
+</div>
      <script src="./script.js"></script>
 </body>
 </html>

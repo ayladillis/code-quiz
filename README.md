@@ -28,7 +28,7 @@ THEN I can save my initials and score
 
 5. use the addEventListener 'click' function to record the socre when the user clicks on the rigth/wrong button. 
 
-6. within the buttons function in script.js use the .split class so the buttons will loop through after being clicked. 
+6. 
 
 7. create an h1 tag in html and title it "All Done!" 
 
