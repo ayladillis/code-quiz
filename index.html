@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Code Quiz</title>
 </head>
 <body>
 
-    <h1 class="time"></h1>
+<div class="wrapper">
+ <div class="card">
+     <div class="card-header">
+        <h1>Code Quiz Challenge!</h1>
+    </div>  
+  </div class="card-body">
+    <p>
+        Try to answer the following baking-related questions within the time limit. 
+        Keep in mind that incorrect answers will penilize your scoretime by ten 
+        seconds!
+    </p>
+<div class="card-footer">
+    <button id="submit" class="btn">Start</button>
+</div>
 
-    <div id="quiz"></div>
-    <button id="submit">Start Quiz</button>
-    <div id="results"></div>
+  </div>
+</div>
+
 
 <!--questions for quiz-->
 
- var myQuestions = [
+<h2 class="time"></h2>
+
+ <!-- var myQuestions = [
     {
         question: "What is the first step to baking chocholat chip cookes?",
         answer: {
@@ -66,8 +82,8 @@
             correctAnswer: "a"
     }
 
- ]
+ ] -->
     
-    
+     <script src="./script.js"></script>
 </body>
 </html>
