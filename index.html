@@ -7,23 +7,39 @@
     <title>Code Quiz</title>
 </head>
 <body>
+<!--time-->
+    <p id="time">75</p>
 
-<!--First page-->
+<!--start screen-->
+    <div id="container">
+        <div id="textbox">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answee the following code-related questions withing the time limit.
+                Keep in mind that incorrect answers will penalize your scoreTime by ten 
+                seconds!
+            </p>
+        </div>
 
+    <!--start button-->
+        <div id="start">Start</div>
 
-<!--timer-->
-<div>
-    <div>Timer: <span id="timer">75</span></div>
-  </div>  
-</div>
+    <!--questions-->
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
 
-<!-- Questions -->
-<div>
-<card id="start-screen" class="opening-screen">
-    <h1>Coding Quiz Challenge</h1>
-    <button id="start-button" style="background-color:indigo; color:white;">Start Quiz</button>
-</card>
+    <!--move through questions-->
+            <div id="progress"></div>
+        </div>
+    </div>
 
      <script src="./script.js"></script>
+
 </body>
 </html>
+
+
