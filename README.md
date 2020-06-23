@@ -1,5 +1,7 @@
-# code-quiz
-code quiz homework 04
+# Code-Quiz
+Code Quiz homework 04 
+
+The purpous of this assignment was to use HTML, CSS and Javascript to create a dinamicly functioning quiz that moved between the quiz questions, which were being timed, and a high scores page. 
 
 ## Acceptance Criteria
 
@@ -15,25 +17,70 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
+### Tools
 
-## PseudoCode 
+* Zoom
+* Slack
+* GitHub
+* GitLab
+* BootCamp Code Drills
+* Slack Overflow
+* Google
+* Youtube
+* w3School
+* Ramon Sanchez (my tutor)
 
-1. in html set a class to time then in script.js assign a variable timeEl.
+## Code Snippets 
 
-2. assign a variable secondsLeft and set it equal to 75 seconds.
+* The following code function I used to hide the start button and text on the inital page seen when opening the link. Throught the use of 'style.display' being set equal to 'none' I was able to vanish the elements I wanted before dieplaying the quiz questions with the same function 'style.display' but this time set squal to 'block'. 
 
-3. use html to set a div and assign class equal to 'topcorner' then in style.css set .topcorner.
+function startQuiz(){
+    timer();
+    start.style.display = "none";
+    textbox.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderProgress();
+}
 
-4. in html create button tags for the answers to the questions and assign them to be variables in the script.js. 
+* I hit alot of walls while working on this Code Quiz but one that I was able to break through with the help of my tutor was the timer! Something important I learned while working on this project was how to better use functions. 
 
-5. use the addEventListener 'click' function to record the socre when the user clicks on the rigth/wrong button. 
+let seconds = 75; 
 
-6. 
+function tick() {
+    if (seconds > 0) {
+        seconds -=1;
+        clock.innerHTML = seconds;
+        timer();
+    }else{
+        stopClock();
+    }
+}
 
-7. create an h1 tag in html and title it "All Done!" 
+function timer() {
+    t = setTimeout(tick, 1000);
+}
 
-8. in script.js assign variables 'addBtn' 'peopleListEl' 'initialEl' and variable 'people' assigned with a string. 
+## Screenshots 
 
-9. create a function of addPersonToList with classes of people.push and peopleListEl.append
+* The following screenshot was from the first meeting with my tutor when he helped me set up my initial code and explained to me what variables to set up. 
 
-10. create a "High Scores" link in the top left hand corner of the page where all users high scores can be viewed and saved. 
+<img scr="screenshot1.png" alt="screenshot of my code">
+
+## Deploy Link
+
+* [See Live Site](https://ayladillis.github.io/code-quiz/)
+
+## Authors
+
+Ayla Dillis
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScrip)
+
+
+
+
+
+
