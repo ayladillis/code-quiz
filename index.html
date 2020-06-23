@@ -8,13 +8,18 @@
 </head>
 <body>
 <!--time-->
-    <p id="time">75</p>
+<div>
+    <div class="timer">Timer: <span id="clock">75</span></div>
+</div>
+
+<!--high socres-->
+<div id="score">View Highscores</div>
 
 <!--start screen-->
     <div id="container">
         <div id="textbox">
             <h1>Coding Quiz Challenge</h1>
-            <p>Try to answee the following code-related questions withing the time limit.
+            <p>Try to answer the following code-related questions within the time limit.
                 Keep in mind that incorrect answers will penalize your scoreTime by ten 
                 seconds!
             </p>
@@ -26,11 +31,11 @@
     <!--questions-->
         <div id="quiz" style="display: none">
             <div id="question"></div>
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-            </div>
+            <ul id="choices">
+                <li class="choice" id="A" onclick="checkAnswer('A')"></li>
+                <li class="choice" id="B" onclick="checkAnswer('B')"></li>
+                <li class="choice" id="C" onclick="checkAnswer('C')"></li>
+            </ul>
 
     <!--move through questions-->
             <div id="progress"></div>

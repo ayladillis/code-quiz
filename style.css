@@ -3,6 +3,18 @@ body{
   font-family: Helvetica;
 }
 
+.timer {
+  text-align: right;
+}
+#clock {
+  color: indigo;
+  text-align: right;
+}
+
+#score {
+  color: indigo;
+}
+
 #container{
   margin : 20px auto;
   background-color: white;

@@ -10,11 +10,12 @@ const choiceC = document.getElementById("C");
 
 const counter = document.getElementById("counter");
 
-const time = document.getElementById("time");
-
+const time = document.getElementById("clock");
+//current question
 const progress = document.getElementById("progress");
 
 const scoreDiv = document.getElementById("score");
+const choice = document.querySelectorAll("li");
 
 // create questions
 let questions = [
@@ -23,41 +24,37 @@ let questions = [
         choiceA : "hyper text markup language",
         choiceB : "home tool markup langauge",
         choiceC : "hyperlink tool makeup language",
-        correct : "A"
+        correct : "hyper text markup language"
     },{
        question : "what does CSS stand for?" ,
        choiceA : "consistent styling sheets",
        choiceB : "cascading style sheets",
        choiceC : "choosing style sheets",
-       correct : "B"
+       correct : "cascading style sheets"
     },{
         question : "what are the three main languages of the internet?",
         choiceA : "HTML, CSS, Javascript",
         choiceB : "HTML, CSS, Python",
         choiceC : "HTML, Javascript, Python",
-        correct : "A"
+        correct : "HTML, CSS, Javascript"
     },{
         question : "which site can you create repositories on?",
         choiceA : "GitLink",
         choiceB : "GitLab",
         choiceC : "GitHub",
-        correct : "C"
+        correct : "GitHub"
     },{
         question : "what is Jerome's favorite animal?",
         choiceA : "cat",
         choiceB : "dog",
         choiceC : "guinea pig",
-        correct : "A"
+        correct : "cat"
     }
 ];
-// assign variables 
 
+// assign variables 
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
-let count = 0;
-const questionTime = 75; 
-let TIMER;
-let score = 0;
 
 // function to make questions appear 
 function renderQuestion(){
@@ -74,6 +71,7 @@ start.addEventListener("click",startQuiz);
 
 // start quiz
 function startQuiz(){
+    timer();
     start.style.display = "none";
     textbox.style.display = "none";
     renderQuestion();
@@ -89,8 +87,28 @@ function renderProgress(){
 }
 
 //time
+let seconds = 75; 
 
+function tick() {
+    if (seconds > 0) {
+        seconds -=1;
+        clock.innerHTML = seconds;
+        timer();
+    }else{
+        stopClock();
+    }
+}
 
+function timer() {
+    t = setTimeout(tick, 1000);
+}
+
+//question answers
+if (choice.innerHTML === questions.questionNumber.correct) {
+    //
+}
+
+choices.addEventListener("click")
 
 // score
 
@@ -136,12 +154,12 @@ function checkAnswer(answer){
 
 //answer is correct
 function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+    document.getElementById(runningQuestion);
 }
 
 //answer is Wrong
 function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+    document.getElementById(runningQuestion);
 }
 
 // score render
