@@ -65,7 +65,7 @@ function timer() {
 
 * The following screenshot was from the first meeting with my tutor when he helped me set up my initial code and explained to me what variables to set up. 
 
-<img scr="screenshot1.png" alt="screenshot of my code">
+<img src="screenshot1.png" alt="screenshot of my code">
 
 ## Deploy Link
 

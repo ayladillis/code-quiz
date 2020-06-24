@@ -9,9 +9,10 @@ body{
 #clock {
   color: indigo;
   text-align: right;
+  top: 0;
 }
 
-#score {
+#highscores {
   color: indigo;
 }
 
