@@ -1,6 +1,6 @@
 # Code-Quiz
 
-The purpous of this assignment was to use HTML, CSS and Javascript to create a dinamicly functioning quiz that moved between the quiz questions, which were being timed, and a high scores page. 
+The purpous of this app is to use HTML, CSS and Javascript to create a dinamicly functioning quiz that moved between the quiz questions, which were being timed, and a high scores page. 
 
 ![Web Screenshot](start-page.png)
 
